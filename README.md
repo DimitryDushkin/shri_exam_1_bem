@@ -9,7 +9,7 @@ You may also consider [installing bem-tools locally to your environment](http://
 ## Установка:
 
 1. ›`git clone https://github.com/DimitryDushkin/shri_exam_1_bem.git`
-2. ›`cd shri_exam_bem`
+2. ›`cd shri_exam_1_bem`
 3. >`npm install`
 4. ›`./node_modules/bem/bin/bem server`
 
