@@ -1,0 +1,43 @@
+.person {
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.person__photo {
+  float: left;
+  width: 30%;
+}
+
+.person__photo__image {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 2px #bbb;
+}
+
+.person__info {
+  float: left;
+  width: 60%;
+  padding-left: 10%;
+}
+
+.person__name {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.person__city {
+ margin-bottom: 10px; 
+}
+
+.person__name:first-letter {
+  color: #ff0000;
+}
+.person__about {
+  margin-bottom: 15px;
+}
+
+.clearfix {
+  clear: both;
+  overflow: auto;
+}

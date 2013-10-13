@@ -1,0 +1,30 @@
+block('contacts').content()(function() {
+
+    var json = {
+            '/': './data/students.json',
+            '/otto': './store/otto.json',
+            '/homer': './store/homer.json'
+        },
+        route = this.data.route;
+
+    return this.doAsync(function() {
+
+        var promise = Vow.promise();
+
+        Fs.readFile(json[route], function(error, data) {
+            if(error) return promise.reject(new Error('API request error: ', err));
+            return promise.fulfill(JSON.parse(data));
+        });
+
+        return promise;
+
+    }).then(function(contacts) {
+        return applyCtx(
+            contacts.map(function(contact) {
+                contact.block = 'contact';
+                return contact;
+            })
+        );
+    });
+
+});

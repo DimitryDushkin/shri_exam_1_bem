@@ -1,0 +1,15 @@
+block('b-menu').elem('item')(
+    tag()('li'),
+    content()(function(){
+      return {
+        tag: 'a',
+        elem: this.ctx.mod == 'active' ? 'item__link__active' : 'item__link',
+        attrs: {
+          href: this.ctx.url
+        },
+        content: this.ctx.content
+      };
+      
+    })
+    
+);

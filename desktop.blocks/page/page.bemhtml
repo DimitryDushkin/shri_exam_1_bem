@@ -1,0 +1,8 @@
+block('person')(
+    content()(function() {
+        return {
+            elem: 'i-body',
+            content: this.ctx.content
+        }
+    })
+);

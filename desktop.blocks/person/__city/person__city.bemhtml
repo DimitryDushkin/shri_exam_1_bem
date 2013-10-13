@@ -1,0 +1,6 @@
+block('person').elem('city')(
+    tag()('div'),
+    content()(function() {
+        return { content: "Город: " + this.ctx.content }; 
+    })
+);

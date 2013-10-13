@@ -1,0 +1,40 @@
+.b-logo {
+  width: 190px;
+  cursor: normal;
+  border: 6px solid #00ABB3;
+  border-top: none;
+  box-shadow: 0 5px 20px #555;
+
+  -webkit-transition: box-shadow ease 0.3s;
+  transition: box-shadow ease 0.3s;
+}
+
+.b-logo:hover {
+  box-shadow: 0 3px 10px #111;
+}
+
+.b-logo__inner {
+  color: #fff;
+  text-align: center;
+  border: 1px dashed #fff;
+  border-top: none;
+  background-color: #00ABB3;
+  padding: 10px;
+}
+
+.b-logo h1 {
+  margin: 10px 0 0 0;
+  font-size: 3.1em;
+}
+
+.b-logo h2 {
+  margin: 10px 0 0 0;
+  font-size: 2.25em;
+  font-weight: bold;
+}
+
+.b-logo h3 {
+  margin: 10px 0 25px 0;
+  font-weight: normal;
+  font-size: 18px;
+}

@@ -1,0 +1,13 @@
+.page__body
+{
+    font: 14px Helvetica, Arial, sans-serif;
+    background-color: #F6F5F3;
+}
+ 
+.page__body-i
+{
+    width: 1300px;
+    max-width: 100%;
+    margin: 2em auto;
+    padding: 1.6em;
+}

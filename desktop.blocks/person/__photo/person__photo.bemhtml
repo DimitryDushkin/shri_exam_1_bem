@@ -1,0 +1,14 @@
+block('person').elem('photo')(
+    tag()('div'),
+    content()(function(){
+      return { 
+        tag: 'img',
+        elem: 'photo__image',
+        attrs: {
+          src: this.ctx.content
+        }
+      }; 
+      
+    })
+    
+);

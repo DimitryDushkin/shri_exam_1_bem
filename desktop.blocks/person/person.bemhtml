@@ -1,0 +1,33 @@
+block('person')(
+
+    mix()({ block: 'clearfix' }),
+
+    content()(function() {
+
+        return [
+            {
+                elem: 'photo',
+                content: this.ctx.photo || 'http://jing.yandex-team.ru/files/tenorok/screen01_2013-10-05_14-07-38.jpeg'
+            },
+            {
+                elem: 'info',
+                content: [
+                    {
+                        elem: 'name',
+                        content: this.ctx.name || ''
+                    },
+                    {
+                        elem: 'city',
+                        content: this.ctx.city || ''
+                    },
+                    {
+                        elem: 'about',
+                        content: this.ctx.about || ''
+                    }
+                ]
+            }
+            
+        ];
+
+    })
+);

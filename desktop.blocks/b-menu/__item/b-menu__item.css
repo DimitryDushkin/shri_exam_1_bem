@@ -1,0 +1,30 @@
+.b-menu__item {
+  font-size: 1.6em;
+  list-style: none;
+}
+
+.b-menu__item__link, .b-menu__item__link__active {
+  color: #88888B;
+  margin-top: 10px;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  -webkit-transition: background ease 0.3s;
+  -moz-transition: background ease 0.3s;
+  -o-transition: background ease 0.3s;
+  transition: background ease 0.3s;
+  text-decoration: none;
+}
+
+.b-menu__item a:hover {
+  background-color: #E9E8E6;
+  text-decoration: none;
+}
+
+.b-menu__item.active a {
+  color: #000;
+}
+
+.b-menu__item__link__active {
+  color: #000;
+}
